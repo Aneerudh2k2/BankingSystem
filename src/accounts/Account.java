@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import atm.ATM;
 
-class MinimumBalanceException extends Exception{
+class  MinimumBalanceException extends Exception{
 
 	public MinimumBalanceException(String msg) {
 		super(msg);

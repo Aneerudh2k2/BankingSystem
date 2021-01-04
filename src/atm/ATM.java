@@ -11,7 +11,7 @@ public class ATM {
 		return prevBalance;
 	}
 
-	public long setBalance(long amt){
+	public void setBalance(long amt){
 		this.prevBalance = amt;
 	}
 	

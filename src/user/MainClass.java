@@ -5,7 +5,7 @@ import java.io.*;
 
 public class MainClass {
 	
-	public static File Serialise(Customer u) {
+	public static File Serialise(Customer u) {// getting object and storing object value in file and returning
 		File f = new File("oops.txt");
 		try {
 			
@@ -23,7 +23,8 @@ public class MainClass {
 		}
 		return f;
 	}
-	
+
+
 	public static Customer Deserialise(File f) {
 		Customer u = null;
 		try {
@@ -55,14 +56,14 @@ public class MainClass {
 		
 		String name = sc.nextLine();
 		
-		System.out.print("What you prefer for authentication pin/password? ");
+		System.out.print("What you prefer for authentication pin/password? ");// pin
 		
 		String s = sc.nextLine();
 		String pswd = null;
 		int[] pin = new int[4];
 		switch(s) {
 			case "pin": 
-				System.out.print("Enter the Pin: ");
+				System.out.print("Enter the Pin: ");// 0 0 0 0
 				for(int each: pin) { each = sc.nextInt(); }
 				Customer u1 = new Customer(name,pin);
 				File f = Serialise(u1);
