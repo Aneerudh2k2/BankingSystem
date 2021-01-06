@@ -66,8 +66,10 @@ public class MainClass {
 				System.out.print("Enter the Pin: ");// 0 0 0 0
 				for(int each: pin) { each = sc.nextInt(); }
 				Customer u1 = new Customer(name,pin);
+				System.out.println();
 				File f = Serialise(u1);
 				Customer n = Deserialise(f);
+				
 				System.out.println("Customer name: "+ n.name);
 				System.out.println("Customer pin: "+ Arrays.toString(n.pin));
 				break;
@@ -75,8 +77,10 @@ public class MainClass {
 				System.out.print("Enter the password: ");
 				pswd = sc.nextLine();
 				Customer u2 = new Customer(name,pswd);
+				System.out.println();
 				File f1 = Serialise(u2);
 				Customer n1 = Deserialise(f1);
+				
 				System.out.println("Customer name: "+ n1.name);
 				System.out.println("Customer password: "+ n1.password);
 				break;
